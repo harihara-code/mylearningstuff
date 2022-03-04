@@ -1,0 +1,17 @@
+class Palindrome {
+    public static void main(String[] args) throws Exception {
+        String inputString = "madam";
+
+        boolean isPalindrome = true;
+
+        int length = inputString.length();
+        
+        for(int i = 0; i < length / 2; i++) {
+            if(inputString.charAt(i) != inputString.charAt(length - i - 1)) {
+                isPalindrome = false;
+            }
+        }
+
+        System.out.println("Result :"+ isPalindrome);
+    }
+}
